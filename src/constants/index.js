@@ -61,7 +61,7 @@ export const myProjects = [
     title: 'Zentry',
     desc: 'Zentry unites every player from countless games and platforms, fostering a vibrant community where collaboration and competition thrive across diverse virtual worlds.',
     subdesc:
-      'Built as a cutting-edge SaaS app with React.js, GSAP, and Tailwind CSS, PodcastPro delivers high performance, smooth animations, and a scalable, responsive design.',
+      'Built as a cutting-edge app with React.js, GSAP, and Tailwind CSS, Zentry delivers high performance, smooth animations, and a scalable, responsive design.',
     href: 'https://zentry-inky.vercel.app/',
     texture: '/textures/project/hero-1.mp4',
     logo: '/assets/zentry-logo.png',
