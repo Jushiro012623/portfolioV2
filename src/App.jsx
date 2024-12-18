@@ -6,12 +6,21 @@ import Contact from './sections/Contact.jsx';
 import Projects from './sections/Projects.jsx';
 import WorkExperience from './sections/Experience.jsx';
 import React from 'react';
-// import Lenis from 'lenis';
+import Lenis from 'lenis';
 // import { ScrollTrigger } from 'gsap/all';
 // import gsap from 'gsap';
 
 // gsap.registerPlugin(ScrollTrigger)
 const App = () => {
+    React.useEffect( ()=>{
+        const lenis = new Lenis()
+    
+        function raf(time){
+          lenis.raf(time)
+          requestAnimationFrame(raf)
+        }
+        requestAnimationFrame(raf)
+      },[])
 //     const lenis = new Lenis();
 
 //     // Synchronize Lenis scrolling with GSAP's ScrollTrigger plugin
