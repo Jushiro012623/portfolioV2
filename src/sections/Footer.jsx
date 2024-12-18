@@ -11,9 +11,9 @@ const Footer = () => {
         <a className="social-icon cursor-pointer" target="_blank" href="https://github.com/Jushiro012623">
           <img src="/assets/github.svg" alt="github" className="w-1/2 h-1/2" />
         </a>
-        <div className="social-icon cursor-pointer" target="_blank" href="https://www.twitter.com/Jushiro012623">
+        <a className="social-icon cursor-pointer" target="_blank" href="https://www.twitter.com/Jushiro012623">
           <img src="/assets/twitter.svg" alt="twitter" className="w-1/2 h-1/2" />
-        </div>
+        </a>
         <a className="social-icon cursor-pointer" target="_blank" href="https://www.instagram.com/sternritter_ivan/">
           <img src="/assets/instagram.svg" alt="instagram" className="w-1/2 h-1/2" />
         </a>
