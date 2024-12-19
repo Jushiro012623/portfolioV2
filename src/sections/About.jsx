@@ -20,7 +20,7 @@ const About = () => {
       <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
         <BentoTilt className="col-span-1 xl:row-span-3">
           <div className="grid-container">
-            <img src="assets/grid1.png" alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain" />
+            <img src="assets/me.png" alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain" />
 
             <div>
               <p className="grid-headtext ">Hi, I’m Ivan Macabontoc</p>
@@ -34,7 +34,7 @@ const About = () => {
 
         <BentoTilt className="col-span-1 xl:row-span-3">
           <div className="grid-container">
-            <img src="assets/grid2.png" alt="grid-2" className="w-full sm:h-[276px] h-fit object-contain" />
+            <img src="assets/stacks.png" alt="grid-2" className="w-full sm:h-[276px] h-fit object-contain" />
 
             <div>
               <p className="grid-headtext">Tech Stack</p>

@@ -8,6 +8,43 @@ import WorkExperience from './sections/Experience.jsx';
 import React from 'react';
 import Lenis from 'lenis';
 const App = () => {
+    React.useEffect( ()=>{
+        const lenis = new Lenis({
+            smooth: 0.2,  
+            multiplier: 3,  
+        });
+        function raf(time){
+          lenis.raf(time)
+          requestAnimationFrame(raf)
+        }
+        requestAnimationFrame(raf)
+        const links = document.querySelectorAll('a[href^="#"]');
+        links.forEach((link) => {
+            link.addEventListener("click", (e) => {
+                e.preventDefault();
+                const target = document.querySelector(link.getAttribute("href"));
+                target && lenis.scrollTo(target, {});
+            });
+        });
+    },[]) 
+    return (
+        <main className="max-w-7xl mx-auto relative">
+            <Navbar />
+            <Hero />
+            <About />
+            <Projects />
+            {/* <Clients /> */}
+            <WorkExperience />
+            <Contact />
+            <Footer />
+        </main>
+    );
+};
+
+export default App;
+
+
+
     // React.useEffect( ()=>{
     //     const lenis = new Lenis()
     //     function raf(time){
@@ -16,18 +53,3 @@ const App = () => {
     //     }
     //     requestAnimationFrame(raf)
     //   },[])
-    return (
-        <main className="max-w-7xl mx-auto relative">
-        <Navbar />
-        <Hero />
-        <About />
-        <Projects />
-        {/* <Clients /> */}
-        <WorkExperience />
-        <Contact />
-        <Footer />
-        </main>
-    );
-};
-
-export default App;
