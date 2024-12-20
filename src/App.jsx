@@ -18,14 +18,14 @@ const App = () => {
           requestAnimationFrame(raf)
         }
         requestAnimationFrame(raf)
-        const links = document.querySelectorAll('a[href^="#"]');
-        links.forEach((link) => {
-            link.addEventListener("click", (e) => {
-                e.preventDefault();
-                const target = document.querySelector(link.getAttribute("href"));
-                target && lenis.scrollTo(target, {});
-            });
-        });
+        // const links = document.querySelectorAll('a[href^="#"]');
+        // links.forEach((link) => {
+        //     link.addEventListener("click", (e) => {
+        //         e.preventDefault();
+        //         const target = document.querySelector(link.getAttribute("href"));
+        //         target && lenis.scrollTo(target, {});
+        //     });
+        // });
     },[]) 
     return (
         <main className="max-w-7xl mx-auto relative">

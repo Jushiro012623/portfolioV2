@@ -14,9 +14,10 @@ import HeroCamera from '../components/HeroCamera.jsx';
 import { calculateSizes } from '../constants/index.js';
 import { HackerRoom } from '../components/HackerRoom.jsx';
 import Lenis from 'lenis';
-
+import useSmoothScroll from '../hooks/useSmoothScroll.jsx';
+import { HashLink } from 'react-router-hash-link';
 const Hero = () => {
-    
+    const {smoothScroll} = useSmoothScroll()
   // Use media queries to determine screen size
   const isSmall = useMediaQuery({ maxWidth: 440 });
   const isMobile = useMediaQuery({ maxWidth: 768 });
@@ -58,9 +59,9 @@ const Hero = () => {
       </div>
 
       <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space">
-        <a href="#about" className="w-fit">
+        <HashLink to="#about" smooth scroll={smoothScroll} className="w-fit">
           <Button name="Let's work together" isBeam containerClass="sm:w-fit w-full sm:min-w-96" />
-        </a>
+        </HashLink>
       </div>
     </section>
   );

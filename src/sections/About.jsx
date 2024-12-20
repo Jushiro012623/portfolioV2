@@ -2,10 +2,12 @@ import React, { useState } from 'react';
 import Globe from 'react-globe.gl';
 import BentoTilt from '../components/BentoTilt';
 import Button from '../components/Button.jsx';
+import { HashLink } from 'react-router-hash-link';
+import useSmoothScroll from '../hooks/useSmoothScroll.jsx';
 
 const About = () => {
   const [hasCopied, setHasCopied] = useState(false);
-
+    const {smoothScroll} = useSmoothScroll()
   const handleCopy = () => {
     navigator.clipboard.writeText(' ivanallen64@gmail.com');
     setHasCopied(true);
@@ -64,7 +66,7 @@ const About = () => {
             <div>
               <p className="grid-headtext">I’m very flexible with time zone communications & locations</p>
               <p className="grid-subtext">I&apos;m based in Manila, Philippines and open to remote work worldwide.</p>
-              <a href="#contact" className="w-fit"><Button name="Contact Me" isBeam containerClass="w-full mt-10" /></a>
+              <HashLink to="#contact"  smooth scroll={smoothScroll} className="w-fit"><Button name="Contact Me" isBeam containerClass="w-full mt-10" /></HashLink>
             </div>
           </div>
         </BentoTilt>
