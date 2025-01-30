@@ -9,15 +9,23 @@ import React from 'react';
 import Lenis from 'lenis';
 const App = () => {
     React.useEffect( ()=>{
+        if (typeof window !== 'undefined' && typeof document !== 'undefined') {
+      const isMobile = window.innerWidth <= 768; // Adjust the width to match your mobile breakpoint
+
+      if (!isMobile) {
         const lenis = new Lenis({
-            smooth: 0.2,  
-            multiplier: 3,  
+          smooth: 0.2,  
+          multiplier: 3,  
         });
-        function raf(time){
-          lenis.raf(time)
-          requestAnimationFrame(raf)
+
+        function raf(time) {
+          lenis.raf(time);
+          requestAnimationFrame(raf);
         }
-        requestAnimationFrame(raf)
+
+        requestAnimationFrame(raf);
+
+        // Optional: Add scroll link behavior (uncomment if needed)
         // const links = document.querySelectorAll('a[href^="#"]');
         // links.forEach((link) => {
         //     link.addEventListener("click", (e) => {
@@ -26,6 +34,8 @@ const App = () => {
         //         target && lenis.scrollTo(target, {});
         //     });
         // });
+      }
+    }
     },[]) 
     return (
         <main className="max-w-7xl mx-auto relative">
