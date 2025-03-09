@@ -10,8 +10,7 @@ import Lenis from 'lenis';
 const App = () => {
     React.useEffect( ()=>{
         if (typeof window !== 'undefined' && typeof document !== 'undefined') {
-      const isMobile = window.innerWidth <= 768; // Adjust the width to match your mobile breakpoint
-
+      const isMobile = window.innerWidth <= 768
       if (!isMobile) {
         const lenis = new Lenis({
           smooth: 0.2,  
@@ -25,7 +24,7 @@ const App = () => {
 
         requestAnimationFrame(raf);
 
-        // Optional: Add scroll link behavior (uncomment if needed)
+        (uncomment if needed)
         // const links = document.querySelectorAll('a[href^="#"]');
         // links.forEach((link) => {
         //     link.addEventListener("click", (e) => {
