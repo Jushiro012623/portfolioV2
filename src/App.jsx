@@ -24,7 +24,7 @@ const App = () => {
 
         requestAnimationFrame(raf);
 
-        (uncomment if needed)
+        // (uncomment if needed)
         // const links = document.querySelectorAll('a[href^="#"]');
         // links.forEach((link) => {
         //     link.addEventListener("click", (e) => {
