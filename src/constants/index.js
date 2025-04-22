@@ -23,7 +23,7 @@ export const navLinks = [
 
 export const myProjects = [
   {
-    title: 'Zentry',
+    title: 'Zentry Clone',
     desc: 'Zentry unites every player from countless games and platforms, fostering a vibrant community where collaboration and competition thrive across diverse virtual worlds.',
     subdesc:
       'Built as a cutting-edge app with React.js, GSAP, and Tailwind CSS, Zentry delivers high performance, smooth animations, and a scalable, responsive design.',
@@ -55,19 +55,51 @@ export const myProjects = [
     ],
   },
   {
-    title: 'Thriump Co. E-Commerce',
-    desc: 'Triump is your go-to thrift shop where you can find a wide range of thrifted products at unbeatable prices, offering unique, high-quality items that fit every budget and style.',
-    subdesc:
-    "With Thriump Co., experience seamless real-time collaboration with no lag, powered by React.js and Express.js' latest features.",
-    href: 'https://github.com/Jushiro012623/triump-co/',
+    title: 'iPhone 15 Pro Clone Website',
+    desc: 'This clone website replicates the official Apple iPhone 15 Pro product page, showcasing its stunning design, powerful specs, and immersive animations to mirror the premium feel of Apple’s own site.',
+    subdesc: 'Crafted with React.js, GSAP, ThreeJS, and Tailwind CSS, the project delivers a smooth, interactive UI featuring device highlights like the A17 Pro chip, titanium build, advanced camera system, and more — all designed to provide a near-authentic Apple browsing experience.',
+    href: 'https://iphone-clone-green.vercel.app/',
     texture: '/textures/project/hero-2.mp4',
-    logo: '/assets/tc.png',
+    logo: '/assets/iphone15.png',
     logoStyle: {
       backgroundColor: '#13202F',
       border: '0.2px solid #17293E',
       boxShadow: '0px 0px 60px 0px #2F6DB54D',
     },
     spotlight: '/assets/spotlight2.png',
+    tags: [
+      {
+        id: 1,
+        name: 'React.js',
+        path: '/assets/react.svg',
+      },
+      {
+        id: 2,
+        name: 'GSAP',
+        path: 'assets/gsap.png',
+      },
+      {
+        id: 3,
+        name: 'Tailwind CSS',
+        path: 'assets/tailwindcss.png',
+      },
+
+    ],
+  },
+  {
+    title: 'Thriump Co. E-Commerce',
+    desc: 'Triump is your go-to thrift shop where you can find a wide range of thrifted products at unbeatable prices, offering unique, high-quality items that fit every budget and style.',
+    subdesc:
+    "With Thriump Co., experience seamless real-time collaboration with no lag, powered by React.js and Express.js' latest features.",
+    href: 'https://github.com/Jushiro012623/triump-co/',
+    texture: '/textures/project/hero-4.mp4',
+    logo: '/assets/tc.png',
+    logoStyle: {
+      backgroundColor: '#13202F',
+      border: '0.2px solid #17293E',
+      boxShadow: '0px 0px 60px 0px #2F6DB54D',
+    },
+    spotlight: '/assets/spotlight5.png',
     tags: [
       {
         id: 1,
