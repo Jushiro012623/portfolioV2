@@ -60,7 +60,7 @@ export const myProjects = [
     subdesc: 'Crafted with React.js, GSAP, ThreeJS, and Tailwind CSS, the project delivers a smooth, interactive UI featuring device highlights like the A17 Pro chip, titanium build, advanced camera system, and more — all designed to provide a near-authentic Apple browsing experience.',
     href: 'https://iphone-clone-green.vercel.app/',
     texture: '/textures/project/hero-2.mp4',
-    logo: '/assets/iphone15.png',
+    logo: '/assets/apple.svg',
     logoStyle: {
       backgroundColor: '#13202F',
       border: '0.2px solid #17293E',
