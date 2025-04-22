@@ -28,7 +28,7 @@ export const myProjects = [
     subdesc:
       'Built as a cutting-edge app with React.js, GSAP, and Tailwind CSS, Zentry delivers high performance, smooth animations, and a scalable, responsive design.',
     href: 'https://zentry-inky.vercel.app/',
-    texture: '/textures/project/hero-1.mp4',
+    texture: '/textures/custom/zentryvideo.mp4',
     logo: '/assets/zentry-logo.png',
     logoStyle: {
       backgroundColor: '#2A1816',
@@ -59,7 +59,7 @@ export const myProjects = [
     desc: 'This clone website replicates the official Apple iPhone 15 Pro product page, showcasing its stunning design, powerful specs, and immersive animations to mirror the premium feel of Apple’s own site.',
     subdesc: 'Crafted with React.js, GSAP, ThreeJS, and Tailwind CSS, the project delivers a smooth, interactive UI featuring device highlights like the A17 Pro chip, titanium build, advanced camera system, and more — all designed to provide a near-authentic Apple browsing experience.',
     href: 'https://iphone-clone-green.vercel.app/',
-    texture: '/textures/project/hero-2.mp4',
+    texture: '/textures/custom/applevideo.mp4',
     logo: '/assets/apple.svg',
     logoStyle: {
       backgroundColor: '#13202F',
